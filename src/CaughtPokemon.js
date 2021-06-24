@@ -11,7 +11,7 @@ const CaughtPokemon = () => {
     return (
     <div>
       {/*Onclick call the function and update caught variable by one */}
-    <button onClick={catchPokemon}>Click me!</button>
+    <button onClick={catchPokemon}>Catch Pokemon!</button>
     <p>Caught {caught} Pokemon on {date}</p>
     </div>
     );
