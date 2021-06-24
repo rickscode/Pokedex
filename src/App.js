@@ -8,12 +8,16 @@ function App(){
 
   return <div>
     {/*Component composition,
-    Passing props*/}
-    <Logo appName="Daisy's"/>
+    Passing props / Passing function as props*/}
+    <Logo appName="Daisy's" handleClick={logWhenClicked}/>
     <BestPokemon abilities={abilities} />
     {/*No props*/}
     <CaughtPokemon />
       </div>;
+
+function logWhenClicked() {
+  console.log("successfully clicked");
+}
 }
 
 export default App;

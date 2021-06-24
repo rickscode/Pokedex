@@ -5,9 +5,15 @@ const Logo = (props) => {
     console.log(props);
     return <header>
       <h1>Welcome to {props.appName} Pokedex</h1>
-      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
+      {/* Event Handler in React */}
+      <img onClick={props.handleClick}src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
         alt="pokemon"/>
         </header>;
+
+        // function logWhenClicked() {
+        //   console.log("successfully clicked");
+        // }
+
   };
 
   export default Logo;
