@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
+import PokemonMoves from "./PokemonMoves";
 
 function App(){
   const abilities = ["Blaze", "Solar Power"];
@@ -13,6 +14,7 @@ function App(){
     <BestPokemon abilities={abilities} />
     {/*No props*/}
     <CaughtPokemon />
+    <PokemonMoves />
       </div>;
 
 function logWhenClicked() {
