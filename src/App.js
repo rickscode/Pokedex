@@ -13,9 +13,7 @@ function App(){
     Passing props / Passing function as props*/}
     <Logo appName="Daisy's" handleClick={logWhenClicked}/>
     <BestPokemon abilities={abilities} />
-    {/*No props*/}
     <CaughtPokemon />
-    {/* <PokemonMoves /> */}
     <PokemonMovesSelector />
     <PokemonCity />
       </div>;
